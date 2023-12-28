@@ -1,12 +1,14 @@
 {
-  "name": "Alexa",
-  "version": "2.0.0",
-  "description": "Whatsapp Bot",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "dependencies": {
+   "name": "Abu-MD",
+   "version": "2.0.1",
+   "description": "Abu-MD - Simple whatsapp Bot",
+   "main": "./index.js",
+   "scripts": {
+    "start": "supervisor -s index.js"
+   },
+   "author": "Afx-Abu",
+   "license": "ISC",
+   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "git+https://github.com/Afx-Abu/baileys.ml",
@@ -37,23 +39,7 @@
     "say": "^0.16.0",
     "sequelize": "^6.23.0",
     "spotifydl-core": "^0.2.0",
+    "supervisor": "0.12.0",
     "sqlite3": "^5.1.6"
-  },
-  "scripts": {
-    "start": "pm2 start index.js --name alexa"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lz-Zack/Alexa-MD.git"
-  },
-  "keywords": [
-    "bot",
-    "whatsapp"
-  ],
-  "author": "Lz-Zack",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Lz-Zack/Alexa-MD/issues"
-  },
-  "homepage": "https://github.com/Lz-Zack/Alexa-MD#readme"
+   }
 }
