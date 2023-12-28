@@ -38,6 +38,6 @@
     "say": "^0.16.0",
     "sequelize": "^6.23.0",
     "spotifydl-core": "^0.2.0",
-    "sqlite3": "^5.1.6", 
+    "sqlite3": "^5.1.6"
    }
 }
