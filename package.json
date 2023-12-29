@@ -3,7 +3,7 @@
    "version": "2.0.1",
    "description": "Abu-MD - Simple whatsapp Bot",
      "scripts": {
-    "start": "pm2 start . --attach --name Raganork"
+    "start": "pm2 start . --attach --name Alexa"
   },
    "author": "Afx-Abu",
    "license": "ISC",
