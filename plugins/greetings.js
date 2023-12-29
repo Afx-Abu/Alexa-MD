@@ -1,6 +1,6 @@
 const { Alexa } = require("../lib/");
 const { setMessage, getMessage, delMessage, getStatus, toggleStatus } =
-  require("../database").Greetings;
+  require("../lib/database/").Greetings;
 
 Alexa(
   {
