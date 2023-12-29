@@ -18,7 +18,9 @@ module.exports = {
   HANDLERS:
     process.env.HANDLER === "false" || process.env.HANDLER === "null"
       ? "^"
-      : "^[#]",
+      : "^",
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'ᴊᴀʀᴠɪꜱ;ᴡᴀʙᴏᴛ',
+  AUDIO_DATA: process.env.AUDIO_DATA || 'ʟᴏᴋɪ-xᴇʀ;ᴊᴀʀᴠɪꜱ;https://i.imgur.com/ep3UbBP.jpg',
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "main",
   WARN_COUNT: 3,
