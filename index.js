@@ -27,7 +27,7 @@ const config = require("./config");
 
 const plugins = require("./lib/plugins");
 
-const { serialize, Greetings, decodeJid } = require("./lib");
+const { serialize, Greetings } = require("./lib");
 
 const logger = pino({ level: "silent" });
 
@@ -107,12 +107,11 @@ const client = async () => {
         }
       });
       console.log("Plugins Installed!✅");
-        const packageVersion = require("./package.json").version;
-        const totalPlugins = plugins.commands.length;
+        const packageVersion = require("./package.json").version;        
         const workType = config.WORK_TYPE;
         const str = `\`\`\`Alexa Connected
   Version: ${packageVersion}
-  Total Plugins: ${totalPlugins}
+  Total Plugins: ${plugins.commands.length}
   Worktype: ${workType}\`\`\``;
         conn.sendMessage(conn.user.id, {
           text: str,
@@ -249,4 +248,4 @@ setTimeout(async () => {
   await client();
 }, 100);
 
-                                         
+                                       
