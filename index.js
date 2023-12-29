@@ -111,7 +111,6 @@ const client = async () => {
         const workType = config.WORK_TYPE;
         const str = `\`\`\`Alexa Connected
   Version: ${packageVersion}
-  Total Plugins: ${plugins.commands.length}
   Worktype: ${workType}\`\`\``;
         conn.sendMessage(conn.user.id, {
           text: str,
