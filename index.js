@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const pino = require("pino");
 
-const 
+const {
   default: makeWASocket,
   useMultiFileAuthState,
   Browsers,
@@ -12,6 +12,7 @@ const
   DisconnectReason,
   makeInMemoryStore,
 } = require("@whiskeysockets/baileys");
+
 
 const { PausedChats } = require("./lib/database");
 
