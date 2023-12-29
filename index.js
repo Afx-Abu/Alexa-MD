@@ -27,7 +27,7 @@ const config = require("./config");
 
 const plugins = require("./lib/plugins");
 
-const { serialize, Greetings } = require("./lib");
+const { serialize, Greetings, decodeJid } = require("./lib");
 
 const logger = pino({ level: "silent" });
 
