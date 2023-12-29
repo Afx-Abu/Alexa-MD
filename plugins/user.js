@@ -3,7 +3,7 @@ const { exec } = require("child_process");
 const { WarnDB } = require("../lib/database/warn");
 const { PausedChats } = require("../lib/database/PausedChat");
 const { WARN_COUNT } = require("../config");
-const { saveWarn, resetWarn } = WarnDB;
+const { saveWarn, resetWarn } = require("../lib/database/warn");
 
 Alexa (
   {
