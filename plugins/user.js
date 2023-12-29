@@ -1,7 +1,8 @@
 const { Alexa , isAdmin ,parsedJid} = require("../lib/");
 const { exec } = require("child_process");
-const { PausedChats, WarnDB } = require("../database/");
-const { WARN_COUNT } = require("../../config");
+const { WarnDB } = require("../lib/database/warn");
+const { PausedChats } = require("../lib/database/PausedChat");
+const { WARN_COUNT } = require("../config");
 const { saveWarn, resetWarn } = WarnDB;
 
 Alexa (
