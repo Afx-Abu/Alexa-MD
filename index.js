@@ -107,13 +107,9 @@ const client = async () => {
         }
       });
       console.log("Plugins Installed!✅");
-        const packageVersion = require("./package.json").version;        
-        const workType = config.WORK_TYPE;
-        const str = `\`\`\`Alexa Connected
-  Version: ${packageVersion}
-  Worktype: ${workType}\`\`\``;
-        conn.sendMessage(conn.user.id, {
-          text: str,
+      
+      conn.sendMessage(conn.user.id, {
+          text: "BOT RUNNING HER"
         });
       }
 
