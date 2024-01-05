@@ -1,13 +1,18 @@
-const { Sequelize } = require("sequelize");const fs = require("fs");if (fs.existsSync("config.env")) {require("dotenv").config({ path: "./config.env" });}const toBool = (x) => x === "true";
+const { Sequelize } = require("sequelize");
+const fs = require("fs");
+if (fs.existsSync("config.env")) {require("dotenv").config({ path: "./config.env" });}
+const toBool = (x) => x === "true";
 const DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
 
 module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
-  SESSION: process.env.SESSION.trim() || '',
+  SESSION_ID: process.env.SESSION_ID || "",
   LANG: process.env.LANG || "EN",
   HANDLERS:process.env.HANDLER === "false" || process.env.HANDLER === "null"? "^": "^",
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'ᴊᴀʀᴠɪꜱ;ᴡᴀʙᴏᴛ',
+  AUDIO_DATA: process.env.AUDIO_DATA || 'ʟᴏᴋɪ-xᴇʀ;ᴊᴀʀᴠɪꜱ;https://i.imgur.com/ep3UbBP.jpg',
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "main",
   WARN_COUNT: 3,
