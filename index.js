@@ -37,7 +37,6 @@ fs.readdirSync(__dirname + "/lib/database/").forEach((plugin) => {
   }
 });
 
-require("events").EventEmitter.defaultMaxListeners = 0;
 const aes256 = require('aes256');
 let plaintext = config.SESSION_ID.replaceAll("Alexa~", "");
 let key = 'alexa18'; //enter Your key
@@ -49,7 +48,7 @@ fs.writeFileSync("./lib/auth_info_baileys/creds.json" , result);
    }
   alexabot(
     
-const client = async () => { 
+  const client = async () => { 
   const Alexa = async () => {
     const { state, saveCreds } = await useMultiFileAuthState(
     "./lib/auth_info_baileys/",
