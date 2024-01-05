@@ -40,7 +40,7 @@ fs.readdirSync(__dirname + "/lib/database/").forEach((plugin) => {
 require("events").EventEmitter.defaultMaxListeners = 0;
 const aes256 = require('aes256');
 let plaintext = config.SESSION_ID.replaceAll("Alexa~", "");
-let key = 'bixbyneverdies';
+let key = 'alexa18'; */enter Your key
 let decryptedPlainText = aes256.decrypt(key, plaintext);
   async function alexabot(){
    let {body} = await got(`https://alexaapi-8e5016edf49a.herokuapp.com/session?id=${decryptedPlainText}`)
