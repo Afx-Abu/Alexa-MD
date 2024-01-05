@@ -1,8 +1,8 @@
-const { Alexa, isPrivate} = require("../lib/");
+const { Alexa, isPublic } = require("../lib/");
 Alexa(
   {
     pattern: "ping",
-    fromMe: isPrivate,
+    fromMe: isPublic,
     desc: "To check ping",
     type: "user",
   },
