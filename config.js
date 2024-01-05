@@ -8,7 +8,7 @@ module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
-  SESSION_ID: process.env.SESSION_ID || "",
+  SESSION_ID: process.env.SESSION_ID || "jsl~524cdwP9M3ab9a075d06b61197dc962cd253",
   LANG: process.env.LANG || "EN",
   HANDLERS:process.env.HANDLER === "false" || process.env.HANDLER === "null"? "^": "^",
   STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'ᴊᴀʀᴠɪꜱ;ᴡᴀʙᴏᴛ',
