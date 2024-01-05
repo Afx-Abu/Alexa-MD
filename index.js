@@ -170,11 +170,11 @@ const client = async () => {
         );
       plugins.commands.map(async (command) => {
         if (
-          command.fromMe &&
-          !config.SUDO.split(",").includes(
-            msg.sender.split("@")[0] || !msg.isSelf
-          )
-        ) {
+              command.fromMe &&
+              !config.SUDO.split(",").includes(
+                msg.sender.split("@")[0] || !msg.isSelf
+              )
+            ){
           return;
         }
 
