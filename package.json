@@ -16,6 +16,7 @@
     "bitly": "^7.1.2",
     "browser-id3-writer": "^4.4.0",
     "canvas": "^2.11.2",
+    "express": "latest",
     "download-git-repo": "^3.0.2",
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
