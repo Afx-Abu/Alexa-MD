@@ -39,13 +39,14 @@ fs.readdirSync(__dirname + "/lib/database/").forEach((plugin) => {
   }
 });
 
-const {
-    data
-  } = await axios(`https://pastebin.com/raw/${config.SESSION_ID}`);
-  await fs.writeFileSync("./lib/auth_info/creds.json", JSON.stringify(data));
 
 
 const client = async () => { 
+  const {
+    data
+  } = await axios(`https://pastebin.com/raw/${config.SESSION_ID}`);
+  await fs.writeFileSync("./lib/auth_info/creds.json", JSON.stringify(data));
+  
   const Alexa = async () => {
     const { state, saveCreds } = await useMultiFileAuthState(
     "./lib/auth_info/",
