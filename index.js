@@ -25,6 +25,8 @@ const { Image, Message, Sticker, Video } = require("./lib/base");
 
 const config = require("./config");
 
+const axios = require("axios");
+
 const plugins = require("./lib/plugins");
 
 const { serialize, Greetings, decodeJid } = require("./lib");
